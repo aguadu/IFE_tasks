@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	/*position:relative;*/
+}
+.wrap{
+	position:fixed; top:50%;right:50%;
+	width:400px;
+	height:200px;
+	margin-top:-100px;
+	margin-right:-200px; 
+	background-color:#ccc;
+}
+.ang1,.ang2{
+	background-color:#fc0;
+	width:50px;
+	height:50px; 
+}
+.ang1{
+	border-radius: 0 0 100px 0;
+}
+.ang2{
+	border-radius: 100px 0 0 0;
+	position:relative;top:100px;left:350px; 
+}
