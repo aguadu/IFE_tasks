@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body>div{
+	margin: 20px;
+	padding: 0;
+}
+
+thead td{
+	color: #fff;
+	background-color: #000;
+}
+
+tbody>tr:nth-child(0n+1),
+tbody>tr:nth-child(0n+2),
+tbody>tr:nth-child(0n+3){
+	color: red;
+}
+
+tbody>tr:nth-child(2n){
+	background-color: #999;
+}
+
+input{
+	width: 150px;
+	transition: width 1s;
+}
+
+input:focus{
+	width: 300px;
+}
+
+@keyframes mymove{
+	0% {left:-600px;}
+	33% {left: -400px;}
+	66% {left: -200px;}
+	100% {left: 0;}
+}
+
+.div3{
+	width: 200px;
+	height: 100px;
+	background-color: #f00;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap{
+	width: 600px;
+	height: 100px;
+	animation: mymove 5s linear infinite;
+	position: relative;
+
+}
+
+[id^="item"]{
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+
+ol{
+	position: absolute;bottom: 0;right: 0;
+}
+
+li{
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	background-color: #aaa;
+	margin-left: 2px;
+	display: block;
+	float: left;
+	/*position: absolute;bottom: 0;*/
+}
+
+
+
+#item1{
+	background-color: #f00;
+}
+
+#item2{
+	background-color: #0f0;
+}
+
+#item3{
+	background-color: #00f;
+}
+
+
+
+ul a:nth-child(0n+1){
+	position: absolute;right: 0px !important;
+}
+
+ul a:nth-child(0n+2){
+	position: absolute;right: 21px !important;
+}
+
+ul a:nth-child(0n+3){
+	position: absolute;right: 42px !important;
+}
+
+
+
+
+
+
